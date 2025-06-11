@@ -1,0 +1,22 @@
+.jeux{
+    button{
+        background-color: white;
+        margin: 0;
+        a{     
+        text-decoration: none;
+        display: flex;
+        font-family: 'abolition';
+        font-size: 3rem;
+        color: rgb(0, 0, 0);
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+
+        }
+        img{
+            width: 3rem;
+            margin: 0 1rem;
+            height: 3rem;
+        }
+}
+}

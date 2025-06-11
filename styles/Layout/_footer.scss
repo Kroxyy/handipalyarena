@@ -1,0 +1,54 @@
+footer{
+    background-color: rgb(33, 33, 53);
+    color: white;
+
+    .container{
+        margin: auto 10rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 20rem;
+        align-items: start;
+        gap:10rem;
+    }
+    h2{
+        font-family: 'roboto';
+    }
+    ul{
+         li{
+             margin: 1rem auto;
+             a{
+                display: flex;
+                text-decoration: none;
+                color: white;
+                align-items: center;
+             }
+             img{
+                width: 2rem;
+                margin: 0 1rem;
+             }
+            }
+        
+    }
+    p{
+            margin-right: 10rem;
+        }
+    .socialmedia{
+        ul{
+            display: flex;
+            li{
+                border: 1px;
+                border-color: white;
+                border-style: ridge;
+                border-radius: 50px;
+                padding: 0.8rem;
+            }
+            
+            img{
+                width: 2rem;
+                margin: 0;
+            }
+
+        }
+        
+    }
+}

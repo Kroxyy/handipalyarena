@@ -1,0 +1,457 @@
+@charset "UTF-8";
+/* ---------- RESET CSS ----------*/
+/* enlever les marges naturelles + reset du body/html */
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+/* enlever le style des listes */
+ul, ol {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  font-family: "roboto";
+}
+
+/* corriger l’affichage des images */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+h2 {
+  font-family: "abolition";
+}
+
+p {
+  font-family: "roboto";
+  margin: 0 auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8rem;
+  background-color: rgba(0, 0, 0, 0.38);
+  width: 100%;
+}
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 100%;
+  margin: 1rem;
+}
+nav ul li img {
+  width: 4rem;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+nav ul a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+nav img {
+  width: 20rem;
+}
+
+.background-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+header h1 {
+  font-family: "abolition", sans-serif;
+  font-style: italic;
+  font-size: 8rem;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+header h2 {
+  font-family: "Abolition";
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+  margin: 0 auto;
+  font-style: italic;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+header p {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 4rem auto 10rem auto;
+}
+
+header button {
+  border-radius: 30px;
+  border-style: none;
+  padding: 5px;
+  width: 400px;
+  height: 65px;
+  margin: 0 30px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+header button a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "abolition";
+  font-size: 3rem;
+  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.button-g {
+  background-color: #4BA4CF;
+}
+
+.button-g:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.button-d {
+  background-color: #9046FF;
+}
+
+.button-d:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.infos {
+  position: relative;
+  height: 25rem;
+}
+.infos ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8rem;
+  z-index: 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: -3rem 10rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.infos ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.infos ul li img {
+  width: 8rem;
+}
+.infos ul li h2 {
+  color: white;
+  font-family: "abolition";
+  letter-spacing: 3px;
+}
+.infos ul li p {
+  color: white;
+  font-family: "roboto";
+}
+
+section button {
+  background-color: black;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 30px;
+  margin: 2rem 0;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  border-style: solid;
+}
+section button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+section button a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "roboto";
+  padding: 1rem;
+}
+
+.carrousel-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.jeux {
+  position: relative;
+  z-index: auto;
+  background-color: #383838;
+  height: 55rem;
+  text-align: center;
+  padding: 5rem;
+}
+.jeux h2 {
+  font-size: 80px;
+  color: white;
+  letter-spacing: 4px;
+  margin: auto 0;
+}
+.jeux p {
+  font-size: 25px;
+  color: white;
+  margin: 2rem;
+}
+.jeux .carrousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+.jeux .carrousel::-webkit-scrollbar {
+  display: none;
+}
+.jeux .jeu img {
+  width: 500px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  max-width: none;
+}
+.jeux .carrousel-btn {
+  position: absolute;
+  top: 25%;
+  background-color: rgba(0, 0, 0, 0.482);
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+  width: 4rem;
+}
+.jeux .carrousel-btn.left {
+  position: absolute;
+  left: 0;
+}
+.jeux .carrousel-btn.right {
+  position: absolute;
+  right: 0;
+}
+
+.jeux button {
+  background-color: white;
+  margin: 0;
+}
+.jeux button a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "abolition";
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+.jeux button img {
+  width: 3rem;
+  margin: 0 1rem;
+  height: 3rem;
+}
+
+.partenaires {
+  background-color: #D9D9D9;
+  height: 40rem;
+}
+.partenaires h2 {
+  margin: 0 auto;
+  padding: 4rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.partenaires ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8rem;
+}
+.partenaires ul img {
+  width: 20rem;
+}
+
+footer {
+  background-color: rgb(33, 33, 53);
+  color: white;
+}
+footer .container {
+  margin: auto 10rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 20rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 10rem;
+}
+footer h2 {
+  font-family: "roboto";
+}
+footer ul li {
+  margin: 1rem auto;
+}
+footer ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer ul li img {
+  width: 2rem;
+  margin: 0 1rem;
+}
+footer p {
+  margin-right: 10rem;
+}
+footer .socialmedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .socialmedia ul li {
+  border: 1px;
+  border-color: white;
+  border-style: ridge;
+  border-radius: 50px;
+  padding: 0.8rem;
+}
+footer .socialmedia ul img {
+  width: 2rem;
+  margin: 0;
+}/*# sourceMappingURL=index.css.map */

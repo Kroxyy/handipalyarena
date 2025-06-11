@@ -1,0 +1,62 @@
+.background-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; //mettre l'objet en arrière plan
+  filter: brightness(0.6);
+  
+}
+// .content {
+//   position: relative;
+//   z-index: 1;
+//   color: white;
+// }
+
+
+header{
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
+
+    h1{
+        font-family: 'abolition', sans-serif;
+        font-style: italic;
+        font-size: 8rem;
+        text-align: center;
+        color: white;
+        margin-top: 2rem;
+        letter-spacing: 5px;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    }
+    h2{
+        font-family: 'Abolition';
+        color: white;
+        font-size: 6rem;
+        text-align: center;
+        margin: 0 auto;
+        font-style: italic;
+        letter-spacing: 5px;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    }
+    p{
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    
+    }
+}

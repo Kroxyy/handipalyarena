@@ -1,0 +1,46 @@
+$color1: #D9D9D9;
+$color2: #383838;
+
+
+/* ---------- RESET CSS ----------*/
+
+/* enlever les marges naturelles + reset du body/html */
+html, body {
+margin: 0 auto;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+background-color: black;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+h1{
+    margin: 0 auto;
+    
+}
+/* enlever le style des listes */
+ul, ol {
+margin: 0 auto;
+padding: 0;
+list-style: none;
+
+}
+
+li{
+    font-family: 'roboto';
+}
+
+/* corriger l’affichage des images */
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+h2{
+    font-family: 'abolition';
+}
+p{
+    font-family:'roboto';
+    margin: 0 auto;
+}

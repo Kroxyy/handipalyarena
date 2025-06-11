@@ -1,0 +1,79 @@
+.carrousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.jeux{
+    position: relative;
+    z-index: auto;
+    background-color: $color2;
+    height: 55rem;
+    text-align: center;
+    padding: 5rem;
+
+    h2{
+        font-size: 80px;
+        color: white;
+        letter-spacing: 4px;
+        margin: auto 0;
+        
+
+    }
+    p{
+        font-size: 25px;
+        color: white;
+        margin: 2rem;
+    }
+
+
+
+.carrousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+// déscative la scrollbar
+.carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.jeu img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  max-width: none;
+}
+
+.carrousel-btn {
+  position: absolute;
+  top: 25%;
+  background-color: rgba(0, 0, 0, 0.482);
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  align-items: center;
+  margin: 2rem;
+  width: 4rem;
+}
+
+.carrousel-btn.left {
+  position: absolute;
+  left: 0;
+}
+
+.carrousel-btn.right {
+  position: absolute;
+  right: 0;
+}
+
+
+}

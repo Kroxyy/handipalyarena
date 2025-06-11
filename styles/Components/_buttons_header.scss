@@ -1,0 +1,41 @@
+header div{
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem auto 10rem auto;
+
+}
+
+header button{
+
+    border-radius: 30px;
+    border-style: none;
+    padding: 5px;
+    width: 400px;
+    height: 65px;
+    margin: 0 30px;
+    transition: transform 0.2s ease-in-out;
+
+    a{
+        text-decoration: none;
+        display: flex;
+        font-family: 'abolition';
+        font-size: 3rem;
+        color: white;
+        justify-content: space-around;
+        
+    }
+    
+}
+
+.button-g{
+    background-color: #4BA4CF;
+}
+.button-g:hover{
+    transform: scale(1.1);
+}
+.button-d{
+    background-color: #9046FF;
+}
+.button-d:hover{
+    transform: scale(1.1);
+}
